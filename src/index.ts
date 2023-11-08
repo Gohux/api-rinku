@@ -7,7 +7,7 @@ const cors = require('cors');
 
 app.use(express.json())
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 const allowedOrigins = ['http://localhost:4200']; // Agrega el dominio de tu aplicación Angular
 
